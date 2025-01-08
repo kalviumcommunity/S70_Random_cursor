@@ -51,4 +51,4 @@ Implementing secure user authentication using JWT and Passport.js: Now, I will u
 - Cloud Data Management: MongoDB, and Express - will enable me to learn how real-time data synching is working, and learn the ways how the cloud stores and retrieves a user's specifics.
 
 ## Value of this project
- This project provides both entertainment and utility, offering users a fun and personalized way to interact with web pages while learning about modern web technologies. It combines browser extension development, user authentication, and cloud-based data management in a single project. The skills learned will be useful for building a wide range of web applications, from simple extensions to complex full-stack solutions.
+This project provides both entertainment and utility, offering users a fun and personalized way to interact with web pages while learning about modern web technologies. It combines browser extension development, user authentication, and cloud-based data management in a single project. The skills learned will be useful for building a wide range of web applications, from simple extensions to complex full-stack solutions.
