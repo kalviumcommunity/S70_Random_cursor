@@ -9,6 +9,11 @@ app.use(express.json());
 
 let dbConnectionStatus = "Disconnected";
 
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).send('Something broke!');
+});
+
 mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         dbConnectionStatus = "Connected to MongoDB";
