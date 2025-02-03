@@ -19,6 +19,13 @@ mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopol
         console.error(error);
     });
 
+process.on('SIGINT', () => {
+    mongoose.connection.close(() => {
+        console.log('MongoDB connection closed through app termination');
+        process.exit(0);
+    });
+});
+
 
 app.get('/', (req, res) => {
     res.status(200).send({
